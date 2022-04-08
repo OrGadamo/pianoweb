@@ -1,0 +1,215 @@
+body{
+    margin: 0;
+    background-image: url(bgimg.webp);
+    background-size: cover;
+    position: relative;
+}
+#lside{
+    width: 50vw;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+}
+.Wkey{
+    height:9vh ;
+    width: 50vw;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: none;
+    transition-property:box-shadow, transform;
+    transition-duration: 1s, 1s ;
+    position: relative;
+
+}
+.Wkey > span{
+    position: absolute;
+    right: 0;
+    font-size: 9vh;
+    color: #fff;
+}
+.Wkey:hover{
+    box-shadow: 0px 30px 60px -12px #000 inset;
+    transform:rotateY(10deg);
+}
+/*box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;*/
+.bkey1{
+    height: 6vh;
+    width: 25vw;
+    background-color: #000;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    top:6vh;
+    color: #000;
+    transition-property: transform, color ;
+    transition-duration: 1s 5s;
+}
+.bkey2{
+    height: 6vh;
+    width: 25vw;
+    background-color: #000;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    color: #000;
+    transition-property: transform, color;
+    transition-duration: 1s 10s;
+    bottom:6vh;
+}
+.bkey1:hover{
+    transform: rotateY(-9deg);
+    color: #fff;
+
+}
+.bkey2:hover{
+    transform: rotateY(-9deg);
+    color: #fff;
+
+}
+.bkey1 >span{
+    font-size: 6vh;
+    margin-left: 21vw;
+}
+.bkey2 >span{
+    font-size: 6vh;
+    margin-left: 21vw;
+}
+.bkey1 >span:hover{
+    color: rgb(125, 206, 206);
+}
+.bkey2 >span:hover{
+    color: rgb(125, 206, 206);
+}
+.bnwcontainer{
+    position: relative;
+}
+#rside{
+    display: inline-block;
+    width: 48vw;
+    position: absolute;
+    right: 0;
+    margin: auto;
+    
+}
+#imgtitle{
+    width: 45vw;
+    margin-top: 0.5vh;
+    margin-left: 3vh;
+    position: relative;
+    text-align: center;
+    height: 45vh;
+}
+#musicimg{
+    width: 45vw;
+    height: 45vh;
+    border-radius: 25px;
+    box-shadow: 20px 20px 40px 10px #6170a7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation-name: changeup;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+#imgtitle > span{
+    font-family: 'Dancing Script', cursive;
+    color:#000;
+    text-shadow: 2px 2px #000;
+    font-size: 15vh;
+    display: inline-block;
+    margin-top: 14vh; 
+}
+#djpad{
+    width: 34vw;
+    margin: auto;
+    margin-top: 1vh;
+    border-radius: 20px;
+}
+.pad{
+    display: inline-block;
+    width: 8vw;
+    height: 15vh;
+    border-radius: 20px;
+    border:1px solid black;
+    box-shadow: 0vh 0vh 156px -13px #d34141 inset, 1px 1px 10px #000;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    animation-name: beat1;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+.pad2{
+    display: inline-block;
+    width: 8vw;
+    height: 15vh;
+    border:1px solid black;
+    border-radius: 20px;
+    box-shadow: 0vh 0vh 156px -13px #568eff inset, 1px 1px 10px #000;
+    margin-bottom: 3px;
+    margin-right: 3px;
+     animation-name: beat2;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.pad3{
+    display: inline-block;
+    width: 8vw;
+    height: 15vh;
+    border:1px solid black;
+    border-radius: 20px;
+    box-shadow: 0vh 0vh 156px -13px #bc63eb inset, 1px 1px 10px #000;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    animation-name: beat3;
+    animation-duration: 0.35s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.pad4{
+    display: inline-block;
+    width: 8vw;
+    height: 15vh;
+    border:1px solid black;
+    border-radius: 20px;
+    box-shadow: 0vh 0vh 156px -13px #69e07b inset, 1px 1px 10px #000;
+    margin-bottom: 3px;
+    animation-name: beat4;
+    animation-duration: 0.45s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#audiocon{
+    width: 20vw;
+    margin: auto;
+    margin-top: 2vh;
+}
+@keyframes beat1{
+    from{transform: scale(1);}
+    to{transform: scale(1.04);}
+}
+@keyframes beat2{
+    from{transform: scale(1);}
+    to{transform: scale(1.04);}
+}
+@keyframes beat3{
+    from{transform: scale(1);}
+    to{transform: scale(1.04);}
+}
+@keyframes beat4{
+    from{transform: scale(1);}
+    to{transform: scale(1.04);}
+}
+    @keyframes changeup{
+    0%{box-shadow: 20px 20px 40px 10px #6170a7;}
+    25%{box-shadow: 20px 20px 40px 10px #ffa265;}
+    50%{ box-shadow: 20px 20px 40px 10px #fff;}
+    75%{ box-shadow: 20px 20px 40px 10px #ff556d;}
+    100%{box-shadow: 20px 20px 40px 10px #79db9a;}
+}
